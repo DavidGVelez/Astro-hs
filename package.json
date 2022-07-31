@@ -1,0 +1,16 @@
+{
+  "name": "@example/minimal",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview"
+  },
+  "devDependencies": {
+    "@astrojs/vue": "^0.5.0",
+    "astro": "^1.0.0-rc.3",
+    "vue": "^3.2.37"
+  }
+}
