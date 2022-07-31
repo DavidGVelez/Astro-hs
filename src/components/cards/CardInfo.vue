@@ -91,6 +91,9 @@
         </div>
       </div>
     </div>
+    <div>
+        <a href="/">Go back</a>
+    </div>
   </section>
 </template>
 
