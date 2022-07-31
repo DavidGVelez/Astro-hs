@@ -1,0 +1,24 @@
+---
+    import { allCards } from "../../mocks/cards";
+    import CardInfo from "../../components/cards/CardInfo.vue";
+    export async function getStaticPaths() {
+        return allCards.cards.map((card) => ({ params: { slug: card.slug }, props: { card } }));
+    }
+    const info: Object = Astro.props.card
+    const { name } = Astro.props.card
+
+--- 
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>{name}</title>
+</head>
+
+<body>
+    <CardInfo info={info} />
+</body>
+
+</html>
